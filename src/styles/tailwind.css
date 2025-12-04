@@ -5,3 +5,11 @@
 @plugin '@tailwindcss/typography';
 @plugin '@tailwindcss/forms';
 @plugin "daisyui";
+
+/* Custom theme tokens */
+@theme {
+  --color-primary-bg: #701010;
+  --color-secondary-bg: #d3ebff;
+  --color-tertiary-bg: #f7f1e2;
+  --color-MAW-dark-blue: #09214c;
+}
