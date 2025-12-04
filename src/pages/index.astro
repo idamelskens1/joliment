@@ -1,17 +1,46 @@
 ---
+import { Image } from "astro:assets";
+import inforgrafik from "../assets/inforgrafik-step.png";
+import Button from "../components/Button.astro";
 import MainLayout from "../layouts/MainLayout.astro";
 ---
 
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width" />
-    <meta name="generator" content={Astro.generator} />
-    <title>Astro</title>
-  </head>
-  <body>
-    <h1>Astro</h1>
-    <h2>hej</h2>
-  </body>
-</html>
+<MainLayout>
+  <!--infografik start -->
+  <figure>
+    <Image src={inforgrafik} alt="" class="" />
+  </figure>
+  <!--infografik slut -->
+
+  <!--sektion om samarbejde starter -->
+  <section>
+    <div>
+      <h2>Unikke sløjfer</h2>
+      <div>
+        <p>
+          Hos Joliment er hver sløjfe skabt med omtanke – og i denne særlige kampagne betyder de mere end nogensinde. Sammen med Make-A-Wish støtter Joliment hospitalsramte børn, og 25% af salget går
+          direkte til at opfylde deres største ønsker. Sløjferne bliver dermed ikke kun et smukt accessory, men også et lille bidrag til store drømme.
+        </p>
+      </div>
+      <Button />
+      <!--billede -->
+    </div>
+  </section>
+
+  <!--sektion om samarbejde slutter -->
+
+  <!--sektion om sløjfen starter-->
+  <section>
+    <h2>En sløjfe med sin helt egen historie</h2>
+    <div>
+      <p>
+        Hver sløjfe fra Joliment bærer sin helt egen historie. De er skabt af nøje udvalgte genbrugstekstiler – alt fra duge til andre glemte tekstiler, der får nyt liv mellem hænderne på dygtige
+        syentusiaster. Hver sløjfe bliver omhyggeligt formet i hånden og på symaskinen, og der bliver lagt tid, kærlighed og detaljeret håndværk i hver eneste. Fordi materialerne aldrig er helt ens,
+        bliver resultatet det heller ikke
+      </p>
+    </div>
+    <Button />
+    <!--billede -->
+  </section>
+  <!--sektion om sløjfen slutter-->
+</MainLayout>

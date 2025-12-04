@@ -1,21 +1,19 @@
 ---
+import "../styles/tailwind.css";
 const { title } = Astro.props;
 ---
 
 <html lang="da">
   <head>
     <meta charset="utf-8" />
-    <link rel="" type="" href="" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
     <title>{Astro.props.title}</title>
+    <link rel="icon" type="../assets/images/guitar-favicon.png" href="/logo.svg" />
   </head>
-
-  <body class="bg-">
-    <header></header>
-    <main>
-      <slot />
-    </main>
-    <footer></footer>
+  <body class="min-h-screen">
+    <slot />
   </body>
+  <footer></footer>
 </html>
