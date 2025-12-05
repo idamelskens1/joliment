@@ -1,3 +1,15 @@
 ---
+import { Image } from "astro:assets";
+import slojfe from "../assets/slojfestribe.png";
+import Button from "../components/Button.astro";
 import MainLayout from "../layouts/MainLayout.astro";
 ---
+
+<MainLayout>
+  <section>
+    <h1>Tak for dit køb og donation!</h1>
+    <p>Joliment og Make A Wish værdsætter dit køb af sløjfe! Du har nu været med til at hjælpe et barn i denne juletid!</p>
+    <Button />
+    <Image src={slojfe} alt="" class="" />
+  </section>
+</MainLayout>

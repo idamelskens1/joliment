@@ -1,3 +1,16 @@
 ---
-
+import { Image } from "astro:assets";
+import logo from "../assets/logo.png";
 ---
+
+<section class="flex justify-between items-center p-6 m-10 rounded-3xl">
+  <div class="">
+    <a href="/"><Image src={logo} alt="logo" class="h-16" /></a>
+  </div>
+
+  <div class="lg:text-2xl font-bold lg:ml-10">
+    <a href="/" class="mr-20 text-pink">Samarbejdet</a>
+    <a href="/how_to" class="">Om sløjfen</a>
+    <a href="/how_to" class="">Køb sløjfe</a>
+  </div>
+</section>

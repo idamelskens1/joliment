@@ -1,7 +1,7 @@
 ---
 import { Image } from "astro:assets";
 import inforgrafik from "../assets/inforgrafik-step.png";
-import stjerne from "../assets/stjerne-banner-desktop.svg"; 
+import stjerne from "../assets/stjerne-banner-desktop.svg";
 import Button from "../components/Button.astro";
 import MainLayout from "../layouts/MainLayout.astro";
 ---
@@ -16,7 +16,7 @@ import MainLayout from "../layouts/MainLayout.astro";
   <!--sektion om samarbejde starter -->
   <section>
     <div class="">
-      <h2>Unikke sløjfer</h2>
+      <h2 class="text-pink-700">Unikke sløjfer</h2>
       <div>
         <p class="">
           Hos Joliment er hver sløjfe skabt med omtanke – og i denne særlige kampagne betyder de mere end nogensinde. Sammen med Make-A-Wish støtter Joliment hospitalsramte børn, og 25% af salget går
@@ -46,8 +46,11 @@ import MainLayout from "../layouts/MainLayout.astro";
   <!--sektion om sløjfen slutter-->
 
   <!--Glimmer banner start -->
-   <figure>
-   <Image src={stjerne} alt="" class="" /></figure>
- 
-  
+  <section>
+    <figure>
+      <Image src={stjerne} alt="" class="" />
+    </figure>
+  </section>
+
+  <!--Glimmer banner slut -->
 </MainLayout>
