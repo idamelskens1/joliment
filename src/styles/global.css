@@ -1,1 +1,28 @@
 @import "tailwindcss";
+
+
+@layer base {
+  *,
+  ::after,
+  ::before,
+  ::backdrop,
+  ::file-selector-button {
+    h1 {
+      font-family: "Inter", sans-serif;
+      color: bisque;
+    }
+    h2 {
+      font-family: "Inter", sans-serif;
+      font-size: large;
+      color: bisque;
+    }
+
+    h3,
+    h4,
+    h5,
+    h6,
+    li,
+    a {
+      font-family: "Inter", sans-serif;
+      color: bisque;
+    } } }
