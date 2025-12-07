@@ -4,15 +4,45 @@ import footer from "../assets/footer-logo.png";
 import facebook from "../assets/Face-ikon.png";
 import instagram from "../assets/Insta-ikon.png";
 import tiktok from "../assets/Tiktok-ikon.png";
+import mail from "../assets/mail-ikon.png";
+import mobil from "../assets/Mobil-ikon.png";
+import slojfe from "../assets/slojfe-rod.png";
 ---
 
-<section class="grid grid-cols-1 lg:grid-cols-2">
-  <div class="">
-    <Image src={footer} alt="" class="" />
-  </div>
-  <div>
-    <Image src={facebook} alt="" class="" />
-    <Image src={instagram} alt="" class="" />
-    <Image src={tiktok} alt="" class="" />
-  </div>
+<section class="bg-amber-100">
+  <section class="grid grid-cols-1 lg:grid-cols-2 mt-30">
+    <div class="">
+      <Image src={footer} alt="" class="p-10" />
+    </div>
+    <div class="grid grid-cols-3 place-items-end gap-10 p-10">
+      <a href="skriv facebook linke her"><Image src={facebook} alt="" class="w-7" /></a>
+      <a href="skriv insta link her"><Image src={instagram} alt="" class="w-11" /></a>
+      <a href="kriv tiktok link her"><Image src={tiktok} alt="" class="w-11" /></a>
+    </div>
+  </section>
+
+  <section class="flex flex-col">
+    <div class="grid grid-cols-1 lg:grid-cols-3 mt-10 p-16">
+      <div class="">
+        <p class="mb-3 text-red-950">Kontakt</p>
+        <Image src={mail} alt="" class="" />
+        <a class="text-red-950" href="">Info@joliment.dk</a>
+        <Image src={mobil} alt="" class="" />
+        <a class="text-red-950" href="">+45 40 22 19 23</a>
+        <p class="text-red-950">Mandag - Fredag kl. 9 - 17</p>
+      </div>
+
+      <div class="place-self-center">
+        <p class="text-red-950">Adresse</p>
+        <p class="text-red-950">JOLIMENT</p>
+        <p class="text-red-950">Gammel jernbanevej 4,</p>
+        <p class="text-red-950">2500, Valby</p>
+        <p class="text-red-950">Danmark</p>
+      </div>
+
+      <div class="place-self-center">
+        <Image src={slojfe} alt="" class="" />
+      </div>
+    </div>
+  </section>
 </section>
