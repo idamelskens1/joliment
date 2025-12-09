@@ -2,6 +2,7 @@
 import "../styles/global.css";
 const { title } = Astro.props;
 import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
 ---
 
 <html lang="da">
@@ -13,11 +14,13 @@ import Header from "../components/Header.astro";
     <title>{Astro.props.title}</title>
     <link rel="icon" type="../assets/images/guitar-favicon.png" href="/logo.svg" />
   </head>
-  <body class="min-h-screen">
+  <body class="min-h-screen bg-red-950">
     <header>
       <Header />
     </header>
     <slot />
   </body>
-  <footer></footer>
+  <footer>
+    <Footer />
+  </footer>
 </html>
