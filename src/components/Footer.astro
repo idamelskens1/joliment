@@ -7,32 +7,41 @@ import tiktok from "../assets/Tiktok-ikon.png";
 import mail from "../assets/mail-ikon.png";
 import mobil from "../assets/Mobil-ikon.png";
 import slojfe from "../assets/slojfe-rod.png";
+import Button from "./Button.astro";
 ---
 
-<section class="bg-amber-100">
-  <section class="grid grid-cols-1 lg:grid-cols-2 mt-30">
-    <div class="">
-      <Image src={footer} alt="" class="p-10" />
-    </div>
-    <div class="grid grid-cols-3 place-items-end gap-10 p-10">
-      <a href="skriv facebook linke her"><Image src={facebook} alt="" class="w-7" /></a>
-      <a href="skriv insta link her"><Image src={instagram} alt="" class="w-11" /></a>
-      <a href="kriv tiktok link her"><Image src={tiktok} alt="" class="w-11" /></a>
+<section class="bg-amber-100 flex flex-col">
+  <section class="">
+    <div class="grid grid-cols-1 lg:grid-cols-2">
+      <div class="mt-10 lg:mt-30 lg:ml-40 place-self-center">
+        <Image src={footer} alt="" class="" />
+      </div>
+      <div class="flex flex-col items-center">
+        <div class="grid grid-cols-3 sm:grid-cols-3 mt-10 lg:mt-30 gap-5">
+          <a href="skriv facebook linke her"><Image src={facebook} alt="" class="w-8" /></a>
+          <a href="skriv insta link her"><Image src={instagram} alt="" class="" /></a>
+          <a href="kriv tiktok link her"><Image src={tiktok} alt="" class="" /></a>
+        </div>
+      </div>
     </div>
   </section>
 
   <section class="flex flex-col">
-    <div class="grid grid-cols-1 lg:grid-cols-3 mt-10 p-16">
-      <div class="">
+    <div class="grid grid-cols-1 lg:grid-cols-3 mt-10 p-10">
+      <div class="place-self-center">
         <p class="mb-3 text-red-950">Kontakt</p>
-        <Image src={mail} alt="" class="" />
-        <a class="text-red-950" href="">Info@joliment.dk</a>
-        <Image src={mobil} alt="" class="" />
-        <a class="text-red-950" href="">+45 40 22 19 23</a>
+        <div class="flex items-center mb-3 gap-3">
+          <Image src={mail} alt="" class="" />
+          <a class="text-red-950" href="">Info@joliment.dk</a>
+        </div>
+        <div class="flex items-center mb-3 gap-3">
+          <Image src={mobil} alt="" class="" />
+          <a class="text-red-950" href="">+45 40 22 19 23</a>
+        </div>
         <p class="text-red-950">Mandag - Fredag kl. 9 - 17</p>
       </div>
 
-      <div class="place-self-center">
+      <div class="place-self-center mt-10">
         <p class="text-red-950">Adresse</p>
         <p class="text-red-950">JOLIMENT</p>
         <p class="text-red-950">Gammel jernbanevej 4,</p>
@@ -40,8 +49,9 @@ import slojfe from "../assets/slojfe-rod.png";
         <p class="text-red-950">Danmark</p>
       </div>
 
-      <div class="place-self-center">
-        <Image src={slojfe} alt="" class="" />
+      <div class="place-self-center mt-10 lg:mt-0">
+        <Image src={slojfe} alt="" class="place-self-center" />
+        <Button variant="primary">Køb sløjfe</Button>
       </div>
     </div>
   </section>

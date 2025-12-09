@@ -1,16 +1,42 @@
 ---
 import { Image } from "astro:assets";
 import logo from "../assets/logo.png";
+let open = false;
 ---
 
-<section class="flex justify-between items-center p-10 m-10 bg-transparent">
-  <div class="">
-    <a href="/"><Image src={logo} alt="logo" class="h-20" /></a>
+<nav class="flex items-center justify-between p-4 top-0 left-0 w-full bg-transparent z-50 absolute">
+  <!-- Logo -->
+  <div>
+    <Image src={logo} alt="" class="lg:w-20 w-15 lg:m-8 m-3" />
   </div>
+  <!-- Burger button (kun på mobil) -->
+  <button class="lg:hidden flex flex-col gap-1" aria-label="Toggle Menu" on:click={() => (open = !open)} client:load>
+    <span class="block w-10 h-0.5 bg-amber-100"></span>
+    <span class="block w-6 h-0.5 bg-amber-100"></span>
+    <span class="block w-6 h-0.5 bg-amber-100"></span>
+  </button>
 
-  <div class="lg:text-xl font-regular lg:ml-10 underline">
-    <a href="" class="mr-6">Samarbejdet</a>
-    <a href="" class="mr-6">Om sløjfen</a>
-    <a href="" class="mr-6">Køb sløjfe</a>
-  </div>
-</section>
+  <!-- Desktop menu -->
+  <ul class="hidden lg:flex gap-6 text-lg p-8">
+    <li><a href="/samarbejde">Om samarbejdet</a></li>
+    <li><a href="/sloejfe">Om sløjfen</a></li>
+    <li><a href="/tak">Køb sløjfe</a></li>
+  </ul>
+</nav>
+
+<!-- Mobile menu (vises kun hvis "open" er true) -->
+{
+  open && (
+    <ul class="flex flex-col bg-white shadow-lg p-4 gap-4 lg:hidden">
+      <li>
+        <a href="/">Om samarbejdet</a>
+      </li>
+      <li>
+        <a href="/about">Om sløjfe</a>
+      </li>
+      <li>
+        <a href="/contact">Køb sløjfe</a>
+      </li>
+    </ul>
+  )
+}

@@ -1,6 +1,8 @@
 @import "tailwindcss";
 
 
+
+
 @layer base {
   *,
   ::after,
@@ -13,7 +15,7 @@
     }
     h2 {
       font-family: "Inter", sans-serif;
-      font-size: large;
+      font-size: xx-large;
       color: bisque;
     }
 

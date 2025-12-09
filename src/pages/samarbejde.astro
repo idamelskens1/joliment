@@ -3,71 +3,115 @@ import { Image } from "astro:assets";
 import inforgrafikSam from "../assets/inforgrafikSam.png";
 import MainLayout from "../layouts/MainLayout.astro";
 import Button from "../components/Button.astro";
+import index1 from "../assets/index1.png";
+import sloejfe from "../assets/sloeje2.png";
+import lobet from "../assets/lobet.png";
 ---
 
 <MainLayout>
   <!--første section start -->
 
-  <section>
-    <div>
-      <h2>Børn fortjener en magisk jul</h2>
-      <div>
-        <p>
-          Joliment og Make-A-Wish har indgået et særligt samarbejde, der giver sløjferne en endnu større betydning. 25% af salget går til at opfylde ønsker for hospitalsramte børn og skabe lys i en
-          svær tid. Sløjferne bliver dermed et lille symbol på håb, omsorg og fællesskab. Sammen gør de en mærkbar forskel – ét ønske ad gangen.
-        </p>
-      </div>
-      <Button />
-      <!--Billede -->
+  <section class="grid grid-cols-1 lg:grid-cols-2 m-20 gap-20 mt-40 lg:mt-60 place-self-center">
+    <div class="">
+      <h2 class="">Børn fortjener en magisk jul</h2>
+      <p class="text-amber-100">
+        Joliment og Make-A-Wish har indgået et særligt samarbejde, der giver sløjferne en endnu større betydning. 25% af salget går til at opfylde ønsker for hospitalsramte børn og skabe lys i en svær
+        tid. Sløjferne bliver dermed et lille symbol på håb, omsorg og fællesskab. Sammen gør de en mærkbar forskel – ét ønske ad gangen.
+      </p>
+      <Button variant="primary">Køb sløjfe</Button>
     </div>
 
-    <!--første section slut -->
-
-    <!--Infografik start -->
     <div>
-      <figure>
-        <Image src={inforgrafikSam} alt="" class="" />
-      </figure>
+      <Image src={index1} alt="" class="w-100" />
     </div>
   </section>
 
-  <!--Infografik slut -->
+  <!--første section slut -->
 
-  <!-- juleønsker start -->
+  <!--Infografik start -->
+  <div>
+    <figure>
+      <Image src={inforgrafikSam} alt="" class="place-self-center" />
+    </figure>
+  </div>
 
-  <section>
-    <section>
-      <div>
-        <h2>Juleønsker fra danske sygdomsramte børn og -unge</h2>
+  <section class="bg-amber-100">
+    <section class="">
+      <div class="">
+        <h2 class="text-blue-950 place-self-center">Juleønsker fra danske sygdomsramte børn og -unge</h2>
       </div>
     </section>
 
-    <section>
-      <div>
-        <h3>Noah, 11 år</h3>
-        <p>
-          Noah har altid elsket musik, og på hospitalet bruger han tiden på at lytte til sine yndlingssange. Hans drøm er at få sin egen guitar, så han selv kan skabe musik og give små “koncerter” for
-          sin familie.
-        </p>
-      </div>
-    </section>
-    <section>
-      <div>
-        <h3>Lukas, 15 år</h3>
-        <p>
-          Lukas drømmer om at opleve verden udenfor hospitalets vægge, og hans største juleønske er en tur til Paris. Han vil se Eiffeltårnet, smage croissanter og gå gennem de små gader, som han har
-          set på billeder og i film. For Lukas ville det ikke bare være en rejse – det ville være en oplevelse
-        </p>
-      </div>
-    </section>
-    <section>
-      <div>
-        <h3>Ella, 7 år</h3>
-        <p>
-          Ella elsker at følge Yasmin og Mika på YouTube – deres videoer får hende altid til at grine, selv på svære dage på hospitalet. Hendes største juleønske er at møde dem i virkeligheden, få et
-          stort kram og måske tage et billede sammen. For Ella ville det være den mest magiske oplevelse og en julegave, hun aldrig ville glemme.
-        </p>
-      </div>
+    <section class="grid grid-cols-1 lg:grid-cols-2">
+      <section class="m-25">
+        <div class="bg-blue-950 border-25 border-blue-950">
+          <p>
+            Noah har altid elsket musik, og på hospitalet bruger han tiden på at lytte til sine yndlingssange. Hans drøm er at få sin egen guitar, så han selv kan skabe musik og give små “koncerter”
+            for sin familie.
+          </p>
+        </div>
+        <h3 class="text-blue-950">Noah, 11 år</h3>
+      </section>
+      <section class="m-27 mt-50">
+        <div class="bg-blue-950 border-25 border-blue-950">
+          <p>
+            Lukas drømmer om at opleve verden udenfor hospitalets vægge, og hans største juleønske er en tur til Paris. Han vil se Eiffeltårnet, smage croissanter og gå gennem de små gader, som han
+            har set på billeder og i film. For Lukas ville det ikke bare være en rejse – det ville være en oplevelse
+          </p>
+        </div>
+        <h3 class="text-blue-950">Lukas, 15 år</h3>
+      </section>
+      <section class="m-25 -mt-8">
+        <div class="bg-blue-950 border-25 border-blue-950">
+          <p>
+            Ella elsker at følge Yasmin og Mika på YouTube – deres videoer får hende altid til at grine, selv på svære dage på hospitalet. Hendes største juleønske er at møde dem i virkeligheden, få
+            et stort kram og måske tage et billede sammen. For Ella ville det være den mest magiske oplevelse og en julegave, hun aldrig ville glemme.
+          </p>
+        </div>
+        <h3 class="text-blue-950">Ella, 7 år</h3>
+      </section>
     </section>
   </section>
+
+  <!--timer start -->
+  <section class="flex flex-col items-center mt-30 text-amber-100">
+    <div class="grid auto-cols-max grid-flow-col gap-5 text-center">
+      <div class="bg-neutral rounded-box text-neutral-content flex flex-col p-2">
+        <span class="countdown font-mono text-5xl">
+          <span style="--value:15;" aria-live="polite" aria-label="15">15</span>
+        </span>
+        days
+      </div>
+      <div class="bg-neutral rounded-box text-neutral-content flex flex-col p-2">
+        <span class="countdown font-mono text-5xl">
+          <span style="--value:10;" aria-live="polite" aria-label="10">10</span>
+        </span>
+        hours
+      </div>
+      <div class="bg-neutral rounded-box text-neutral-content flex flex-col p-2">
+        <span class="countdown font-mono text-5xl">
+          <span style="--value:24;" aria-live="polite" aria-label="24">24</span>
+        </span>
+        min
+      </div>
+      <div class="bg-neutral rounded-box text-neutral-content flex flex-col p-2">
+        <span class="countdown font-mono text-5xl">
+          <span style="--value:59;" aria-live="polite" aria-label="59">59</span>
+        </span>
+        sec
+      </div>
+    </div>
+  </section>
+
+  <section class="m-10 p-6 place-self-center">
+    <div>
+      <Image src={lobet} alt="" class="w-100" />
+    </div>
+  </section>
+
+  <!--timer slut -->
 </MainLayout>
+
+<!--Infografik slut -->
+
+<!-- juleønsker start -->
