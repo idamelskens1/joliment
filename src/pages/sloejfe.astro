@@ -1,3 +1,74 @@
 ---
 import MainLayout from "../layouts/MainLayout.astro";
+import { Image } from "astro:assets";
+import Button from "../components/Button.astro";
+import Pil from "../components/Pil.astro";
+import green from "../assets/greenbow.png"; 
+import gran from "../assets/gran.svg";
+import pinkbowcard from "../assets/pinkbowcard.svg";
+import threebows from "../assets/threebows.svg";
+import stoetmed25 from "../assets/stoetmed25.svg";
+
+
 ---
+
+<MainLayout>
+
+<section class="grid grid-cols-1 lg:grid-cols-2 m-20 gap-20 mt-40 lg:mt-60 place-self-center">
+       <div>
+   <Image src={green} alt="" class="w-100" />
+</div> 
+   <div class="">
+     <h2 class="">Børn fortjener en magisk jul</h2>
+     <p class="text-amber-100">
+       Joliment og Make-A-Wish har indgået et særligt samarbejde, der giver sløjferne en endnu større betydning. 25% af salget går til at opfylde ønsker for hos
+       tid. Sløjferne bliver dermed et lille symbol på håb, omsorg og fællesskab. Sammen gør de en mærkbar forskel – ét ønske ad gangen.
+     </p>
+     <a href="/kobsside"><Button variant="primary">Køb sløjfe</Button></a>
+   </div>
+</section>
+ <section>
+           <div>
+   <Image src={gran} alt="" class="w-full" />
+</div> 
+ </section>
+
+ <section class="grid grid-cols-1 lg:grid-cols-2 m-20 gap-20 mt-40 lg:mt-60 place-self-center">
+   <div class="">
+     <h2 class="">Børn fortjener en magisk jul</h2>
+     <p class="text-amber-100">
+       Joliment og Make-A-Wish har indgået et særligt samarbejde, der giver sløjferne en endnu større betydning. 25%
+       tid. Sløjferne bliver dermed et lille symbol på håb, omsorg og fællesskab. Sammen gør de en mærkbar forskel –
+     </p>
+     <a href="/kobsside"><Button variant="primary">Køb sløjfe</Button></a>
+   </div>
+          <div>
+   <Image src={pinkbowcard} alt="" class="w-100" />
+</div> 
+</section>
+ <section>
+           <div>
+   <Image src={threebows} alt="" class="w-100 place-self-center my-20" />
+</div> 
+ </section>
+  <section class="grid grid-cols-1 lg:grid-cols-2 m-20 gap-20 mt-40 lg:mt-60 place-self-center">
+
+       </div>
+          <div>
+   <Image src={stoetmed25} alt="" class="w-100" />
+</div> 
+
+   <div class="">
+     <h2 class="">Børn fortjener en magisk jul</h2>
+     <p class="text-amber-100">
+       Joliment og Make-A-Wish har indgået et særligt samarbejde, der giver sløjferne en endnu større betydning. 25%
+       tid. Sløjferne bliver dermed et lille symbol på håb, omsorg og fællesskab. Sammen gør de en mærkbar forskel –
+     </p>
+     <a href="/kobsside"><Button variant="primary">Køb sløjfe</Button></a>
+</section>
+
+<Pil
+
+
+
+</MainLayout>
