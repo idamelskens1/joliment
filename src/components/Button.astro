@@ -3,6 +3,7 @@
 
 const { variant = "primary", size = "medium" } = Astro.props;
 
+
 //Definer den styling (Tailwind classes, der gør sig gældende for alle knapper
 
 const buttonStyling = " my-4 px-16 py-4 hover:text-white cursor-pointer ";
@@ -13,6 +14,8 @@ const variantClasses = {
   primary: "bg-sky-100 hover:bg-stone-300 text-red-950",
 
   secondary: "bg-amber-100 text-red-950 hover:bg-stone-300",
+
+  tertiary: "bg-sky-100 border-2 text-red-950 hover:bg-red-950 hover:text-white",
 };
 
 //Definer den styling (Tailwind classes), der gør sig gældende for de forskelligeog størrelser.
@@ -22,7 +25,7 @@ const sizeClasses = {
 
   medium: "text-xl ",
 
-  small: "text-large ",
+  small: "text-large",
 };
 ---
 
