@@ -7,7 +7,7 @@ let open = false;
 <nav class="flex items-center justify-between p-4 top-0 left-0 w-full bg-transparent z-50 absolute">
   <!-- Logo -->
   <div>
-    <Image src={logo} alt="" class="lg:w-20 w-15 lg:m-8 m-3" />
+    <a href="/kampagneforside"><Image src={logo} alt="" class="lg:w-20 w-15 lg:m-8 m-3" /></a>
   </div>
   <!-- Burger button (kun på mobil) -->
   <button class="lg:hidden flex flex-col gap-1" aria-label="Toggle Menu" on:click={() => (open = !open)} client:load>

@@ -1,142 +1,78 @@
 ---
 import { Image } from "astro:assets";
-import infografik from "../assets/inforgrafik-step.svg";
-import guirlande from "../assets/guirlande.png";
-import index1 from "../assets/index1.png";
-import index2 from "../assets/index2.png";
-import systue from "../assets/systue.png";
-import Hero from "../components/Hero.astro";
-import stjerne from "../assets/stjerne-banner-desktop.svg";
-import Button from "../components/Button.astro";
-import MainLayout from "../layouts/MainLayout.astro";
+import "../styles/global.css";
+import hero from "../assets/herobillede.svg";
+import kategori1 from "../assets/kategori1.svg";
+import kategori2 from "../assets/kategori2.svg";
+import kategori3 from "../assets/kategori3.svg";
+import kategori4 from "../assets/kategori4.svg";
+import mobil from "../assets/Mobil-ikon.png";
+import mail from "../assets/mail-ikon.png";
+import facebook from "../assets/Face-ikon.png";
+import instagram from "../assets/Insta-ikon.png";
+import tiktok from "../assets/Tiktok-ikon.png";
 ---
 
-<MainLayout>
-  <!-- -->
-  <Hero />
-
-  <!--infografik start -->
-  <div class="place-self-center text-center mt-40">
-    <h2>Skab julemagi i 3 trin</h2>
-    <h3>Det tager kun få minutter at bestille din sløjfe</h3>
-  </div>
-  <figure>
-    <Image src={infografik} alt="" class="place-self-center" />
-  </figure>
-  <!--infografik slut -->
-
-  <!--sektion om samarbejde starter -->
-  <section class="grid grid-cols-1 lg:grid-cols-2 mt-20 m-20 gap-20">
-    <div class="">
-      <h2 class="">Unikke sløjfer</h2>
-      <p class="text-amber-100">
-        Hos Joliment er hver sløjfe skabt med omtanke – og i denne særlige kampagne betyder de mere end nogensinde. Sammen med Make-A-Wish støtter Joliment hospitalsramte børn, og 25% af salget går
-        direkte til at opfylde deres største ønsker. Sløjferne bliver dermed ikke kun et smukt accessory, men også et lille bidrag til store drømme.
-      </p>
-      <Button variant="secondary">Læs mere om samarbejdet</Button>
+<html class="bg-amber-50">
+  <section class="">
+    <div class="bg-transparent z-50 absolute">
+      <h1 class="text-red-950 m-10 text-5xl">JOLIMENT</h1>
     </div>
-
-    <div>
-      <Image src={index1} alt="" class="" />
-    </div>
+    <Image src={hero} alt="" class="" />
   </section>
-
-  <!--sektion om samarbejde slutter -->
-
-  <!--sektion om sløjfen starter-->
-  <section class="grid grid-cols-1 lg:grid-cols-2 mt-40 m-20 gap-20">
-    <div>
-      <Image src={index2} alt="" class="" />
-    </div>
-    <div>
-      <h2>En sløjfe med sin helt egen historie</h2>
-      <p class="text-amber-100">
-        Hver sløjfe fra Joliment bærer sin helt egen historie. De er skabt af nøje udvalgte genbrugstekstiler – alt fra duge til andre glemte tekstiler, der får nyt liv mellem hænderne på dygtige
-        syentusiaster. Hver sløjfe bliver omhyggeligt formet i hånden og på symaskinen, og der bliver lagt tid, kærlighed og detaljeret håndværk i hver eneste. Fordi materialerne aldrig er helt ens,
-        bliver resultatet det heller ikke
-      </p>
-      <Button variant="secondary">Læs mere om sløjfen</Button>
-    </div>
-  </section>
-  <!--sektion om sløjfen slutter-->
-
-  <!--Glimmer banner start -->
-  <section>
-    <figure>
-      <Image src={stjerne} alt="" class="w-full mt-30 mb-30" />
-    </figure>
-  </section>
-  <!--Glimmer banner slut -->
-
-  <!--Influencer sticky starter -->
 
   <section>
-    <div class="flex items-center h-screen w-full bg-cover bg-center sticky top-0" style="background-image: url('/molly.png')">
-      <p class="w-3/4 lg:w-2/4 lg:ml-80 p-10 bg-sky-100 text-xl stickyparallax1 text-red-950">
-        Jeg er utrolig beæret over at blive ambassadør for Make-A-Wish Danmark. Børn og unges trivsel ligger mig meget på sinde, og det gør dybt indtryk på mig, når familier rammes af livstruende
-        sygdom.
-      </p>
-    </div>
-
-    <div class="flex items-center h-screen w-full bg-cover bg-center sticky top-0" style="background-image: url('/Lene.png')">
-      <p class="w-3/4 lg:w-2/4 lg:ml-80 p-10 bg-sky-100 text-xl stickyparallax2 text-red-950">
-        Jeg er utrolig beæret over at blive ambassadør for Make-A-Wish Danmark. Børn og unges trivsel ligger mig meget på sinde, og det gør dybt indtryk på mig, når familier rammes af livstruende
-        sygdom. Lene Beier
-      </p>
-    </div>
-
-    <div class="flex items-center h-screen w-full bg-cover bg-center sticky top-0" style="background-image: url('/hans.png')">
-      <p class="w-3/4 lg:w-2/4 lg:ml-80 p-10 bg-sky-100 text-xl stickyparallax3 text-red-950">
-        Jeg er utrolig beæret over at blive ambassadør for Make-A-Wish Danmark. Børn og unges trivsel ligger mig meget på sinde, og det gør dybt indtryk på mig, når familier rammes af livstruende
-        sygdom.
-      </p>
-    </div>
-  </section>
-
-  <!--Influencer sticky slutter -->
-
-  <!--guirlande starter -->
-
-  <section class="mt-30 mb-30">
-    <Image src={guirlande} alt="" class="w-full" />
-  </section>
-
-  <!--guirlande slutter -->
-
-  <!--sidste sektion starter -->
-
-  <section class="grid grid-cols-1 lg:grid-cols-2">
-    <div class="mt-20 m-20">
-      <h2 class="">Sløjferne er lavet på kærlighed</h2>
-      <p class="text-amber-100 mt-10">
-        Hver sløjfe fra Joliment bliver til med både omhu og kærlighed. hvor de unikke genbrugstekstiler får nyt liv gennem dedikeret syning i hånden og på maskinen. For at vise processen helt tæt på
-        har vi skabt en lille video, der giver et indblik i arbejdet, detaljerne og kærligheden bag hver eneste sløjfe. Se med og oplev, hvordan hver sløjfe bliver skabt med hjerte og hænder.
-      </p>
-      <Button variant="primary">Køb sløjfe</Button>
-    </div>
     <div>
-      <Image src={systue} alt="" class="w-120 place-self-center mb-30" />
+      <h2 class="text-red-950 place-self-center">KATEGORI</h2>
+    </div>
+    <div class="grid lg:grid-cols-2 grid-cols-1 gap-15 m-10 place-self-center justify-center">
+      <div>
+        <a href="/kampagneforside"><Image src={kategori1} alt="kampagne hjemmesiden" class="w-140" /></a>
+      </div>
+      <div>
+        <Image src={kategori2} alt="" class="w-140" />
+      </div>
+      <div>
+        <Image src={kategori3} alt="" class="w-140" />
+      </div>
+      <div>
+        <Image src={kategori4} alt="" class="w-140" />
+      </div>
     </div>
   </section>
 
-  <!--sidste sektion slutter -->
-</MainLayout>
+  <footer>
+    <div class="grid grid-cols-1 lg:grid-cols-3 mt-10 p-10">
+      <div class="place-self-center">
+        <p class="mb-3 text-red-950">Kontakt</p>
+        <div class="flex items-center mb-3 gap-3">
+          <Image src={mail} alt="" class="" />
+          <a class="text-red-950" href="">Info@joliment.dk</a>
+        </div>
+        <div class="flex items-center mb-3 gap-3">
+          <Image src={mobil} alt="" class="" />
+          <a class="text-red-950" href="">+45 40 22 19 23</a>
+        </div>
+        <p class="text-red-950">Mandag - Fredag kl. 9 - 17</p>
+      </div>
 
-<script>
-  import { animate, inView, scroll } from "motion";
+      <div class="place-self-center">
+        <p class="text-red-950">Adresse</p>
+        <p class="text-red-950">JOLIMENT</p>
+        <p class="text-red-950">Gammel jernbanevej 4,</p>
+        <p class="text-red-950">2500, Valby</p>
+        <p class="text-red-950">Danmark</p>
+      </div>
 
-  scroll(animate(".stickyparallax1", { y: [400, -200] }), {
-    target: document.querySelector(".stickyparallax1"),
-    offset: ["start end", "end start"],
-  });
+      <div class="flex flex-col items-center">
+        <div class="grid grid-cols-3 sm:grid-cols-3 mt-10 lg:mt-10 gap-5">
+          <a href="skriv facebook linke her"><Image src={facebook} alt="" class="w-8" /></a>
+          <a href="skriv insta link her"><Image src={instagram} alt="" class="" /></a>
+          <a href="kriv tiktok link her"><Image src={tiktok} alt="" class="" /></a>
+        </div>
+      </div>
+    </div>
+  </footer>
 
-  scroll(animate(".stickyparallax2", { y: [200, 0] }), {
-    target: document.querySelector(".stickyparallax2"),
-    offset: ["start end", "end start"],
-  });
 
-  scroll(animate(".stickyparallax3", { y: [400, 0] }), {
-    target: document.querySelector(".stickyparallax3"),
-    offset: ["start end", "end start"],
-  });
-</script>
+</html>

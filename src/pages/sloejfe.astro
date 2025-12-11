@@ -3,69 +3,72 @@ import MainLayout from "../layouts/MainLayout.astro";
 import { Image } from "astro:assets";
 import Button from "../components/Button.astro";
 import Pil from "../components/Pil.astro";
-import green from "../assets/greenbow.png"; 
+import green from "../assets/greenbow.png";
 import gran from "../assets/gran.svg";
 import pinkbowcard from "../assets/pinkbowcard.svg";
 import threebows from "../assets/threebows.svg";
 import stoetmed25 from "../assets/stoetmed25.svg";
-
-
 ---
 
 <MainLayout>
-
-<section class="grid grid-cols-1 lg:grid-cols-2 m-20 gap-20 mt-40 lg:mt-60 place-self-center">
-       <div>
-   <Image src={green} alt="" class="w-100" />
-</div> 
-   <div class="">
-     <h2 class="">Jul er sløjfernes fest</h2>
-     <p class="text-amber-100">
-        Julen er den tid, hvor sløjfer virkelig kommer til deres ret – på gaver, i håret og som små detaljer, der spreder glæde. Hos Joliment bliver hver sløjfe skabt med omtanke og kærlighed, og i år får de ekstra betydning gennem samarbejdet med Make-A-Wish. 25% af salget går direkte til at opfylde hospitalsramte børns største ønsker, så hver sløjfe ikke bare pynter, men også gør en forskel.
-     </p>
-     <a href="/kobsside"><Button variant="primary">Køb sløjfe</Button></a>
-   </div>
-</section>
- <section>
-           <div>
-   <Image src={gran} alt="" class="w-full" />
-</div> 
- </section>
-
- <section class="grid grid-cols-1 lg:grid-cols-2 m-20 gap-20 mt-40 lg:mt-60 place-self-center">
-   <div class="">
-     <h2 class="">Et kærligt håndværk med omtanke</h2>
-     <p class="text-amber-100">
-        Joliment skaber deres sløjfer af 100% genanvendte tekstiler, som får lov til at blive til noget smukt og meningsfuldt igen. Materialerne, der tidligere har haft et andet liv, forvandles med omhu til sløjfer, der hver især rummer deres egen lille historie. På den måde bliver hver sløjfe et symbol på fornyet håb – skabt med hjerte, omtanke og respekt for både mennesker og miljø.
-     </p>
-     <a href="/kobsside"><Button variant="primary">Køb sløjfe</Button></a>
-   </div>
-          <div>
-   <Image src={pinkbowcard} alt="" class="w-100" />
-</div> 
-</section>
- <section>
-           <div>
-   <Image src={threebows} alt="" class="w-100 place-self-center my-20" />
-</div> 
- </section>
   <section class="grid grid-cols-1 lg:grid-cols-2 m-20 gap-20 mt-40 lg:mt-60 place-self-center">
+    <div>
+      <Image src={green} alt="" class="w-125" />
+    </div>
+    <div class="lg:m-15">
+      <h2 class="">Jul er sløjfernes fest</h2>
+      <p class="text-amber-100 mt-10 text-xl/8">
+        Julen er den tid, hvor sløjfer virkelig kommer til deres ret – på gaver, i håret og som små detaljer, der spreder glæde. Hos Joliment bliver hver sløjfe skabt med omtanke og kærlighed, og i år
+        får de ekstra betydning gennem samarbejdet med Make-A-Wish. 25% af salget går direkte til at opfylde hospitalsramte børns største ønsker, så hver sløjfe ikke bare pynter, men også gør en
+        forskel.
+      </p>
+      <div class="mt-15">
+        <a href="/kobsside"><Button variant="primary">Køb sløjfe</Button></a>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div>
+      <Image src={gran} alt="" class="w-full" />
+    </div>
+  </section>
 
-       </div>
-          <div>
-   <Image src={stoetmed25} alt="" class="w-100" />
-</div> 
+  <section class="grid grid-cols-1 lg:grid-cols-2 m-20 gap-20 mt-40 lg:mt-60 place-self-center">
+    <div class="lg:m-15">
+      <h2 class="">Et kærligt håndværk med omtanke</h2>
+      <p class="text-amber-100 mt-10 text-xl/8">
+        Joliment skaber deres sløjfer af 100% genanvendte tekstiler, som får lov til at blive til noget smukt og meningsfuldt igen. Materialerne, der tidligere har haft et andet liv, forvandles med
+        omhu til sløjfer, der hver især rummer deres egen lille historie. På den måde bliver hver sløjfe et symbol på fornyet håb – skabt med hjerte, omtanke og respekt for både mennesker og miljø.
+      </p>
+      <div class="mt-15">
+        <a href="/kobsside"><Button variant="primary">Køb sløjfe</Button></a>
+      </div>
+    </div>
+    <div>
+      <Image src={pinkbowcard} alt="" class="w-125" />
+    </div>
+  </section>
+  <section>
+    <div class="my-10">
+      <Image src={threebows} alt="" class="w-125 place-self-center" />
+    </div>
+  </section>
 
-   <div class="">
-     <h2 class="">Materialer med et nyt liv</h2>
-     <p class="text-amber-100">
-        Joliment arbejder udelukkende med genanvendte tekstiler, som bliver udvalgt for deres karakter og struktur. Stoffet kommer fra tidligere brugte materialer, der får en ny chance i form af håndlavede sløjfer. Det betyder, at hver sløjfe både bærer på et unikt udtryk og et ansvarligt, bæredygtigt afsæt.
-     </p>
-     <a href="/kobsside"><Button variant="primary">Køb sløjfe</Button></a>
-</section>
+  <section class="grid grid-cols-1 lg:grid-cols-2 m-20 gap-20 mt-40 lg:mt-30 place-self-center">
+    <div>
+      <Image src={stoetmed25} alt="" class="w-125" />
+    </div>
+    <div class="lg:m-15">
+      <h2 class="">Materialer med et nyt liv</h2>
+      <p class="text-amber-100 mt-10 text-xl/8">
+        Joliment arbejder udelukkende med genanvendte tekstiler, som bliver udvalgt for deres karakter og struktur. Stoffet kommer fra tidligere brugte materialer, der får en ny chance i form af
+        håndlavede sløjfer. Det betyder, at hver sløjfe både bærer på et unikt udtryk og et ansvarligt, bæredygtigt afsæt.
+      </p>
+      <div class="mt-15">
+        <a href="/kobsside"><Button variant="primary">Køb sløjfe</Button></a>
+      </div>
+    </div>
+  </section>
 
-<Pil
-
-
-
+  <Pil />
 </MainLayout>
