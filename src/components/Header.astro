@@ -4,8 +4,9 @@ import logo from "../assets/logo.png";
 let open = false;
 ---
 
-<nav class="flex items-center justify-between p-4 top-0 left-0 w-full bg-transparent z-50 absolute">
+<nav class="flex items-center justify-between p-4 top-0 left-0 w-full z-50 absolute">
   <!-- Logo -->
+  <div class="absolute inset-0 bg-white opacity-10 -z-10"></div>
   <div>
     <a href="/kampagneforside"><Image src={logo} alt="" class="lg:w-20 w-15 lg:m-8 m-3" /></a>
   </div>
@@ -17,10 +18,10 @@ let open = false;
   </button>
 
   <!-- Desktop menu -->
-  <ul class="hidden lg:flex gap-6 text-lg p-8">
-    <li><a href="/samarbejde">Om samarbejdet</a></li>
-    <li><a href="/sloejfe">Om sløjfen</a></li>
-    <li><a href="/kobsside">Køb sløjfe</a></li>
+  <ul class="hidden lg:flex gap-6 text-xl p-8">
+    <li class="text-red-950 font-bold underline"><a href="/samarbejde">Om samarbejdet</a></li>
+    <li class="font-bold underline"><a href="/sloejfe">Om sløjfen</a></li>
+    <li class="font-bold underline"><a href="/kobsside">Køb sløjfe</a></li>
   </ul>
 </nav>
 

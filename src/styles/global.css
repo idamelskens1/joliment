@@ -9,11 +9,15 @@
     h1 {
       font-family: "Inter", sans-serif;
       color: bisque;
+      cursor: default;
+      font-size: xx-large;
+
     }
     h2 {
       font-family: "Inter", sans-serif;
       font-size: xx-large;
       color: bisque;
+      cursor: default;
     }
 
     h3,
@@ -21,10 +25,10 @@
     h5,
     h6,
     p,
-    li,
-    a {
+    li {
       font-family: "Inter", sans-serif;
       color: bisque;
+      cursor: default;
     }
   }
 }
