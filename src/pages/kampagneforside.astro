@@ -11,6 +11,7 @@ import Hero from "../components/Hero.astro";
 import stjerne from "../assets/stjerne-banner-desktop.svg";
 import Button from "../components/Button.astro";
 import MainLayout from "../layouts/MainLayout.astro";
+import Pil from "../components/Pil.astro";
 ---
 
 <MainLayout>
@@ -140,7 +141,7 @@ import MainLayout from "../layouts/MainLayout.astro";
           Hver sløjfe fra Joliment bliver til med både omhu og kærlighed. hvor de unikke genbrugstekstiler får nyt liv gennem dedikeret syning i hånden og på maskinen. For at vise processen helt tæt
           på har vi skabt en lille video, der giver et indblik i arbejdet, detaljerne og kærligheden bag hver eneste sløjfe. Se med og oplev, hvordan hver sløjfe bliver skabt med hjerte og hænder.
         </p>
-        <div class="m-15">
+        <div class="mt-10">
           <a href="/kobsside"><Button variant="primary">Køb sløjfe</Button></a>
         </div>
       </div>
@@ -151,6 +152,7 @@ import MainLayout from "../layouts/MainLayout.astro";
 
     <!--sidste sektion slutter -->
   </div>
+  <Pil />
 
   <script>
     import { animate, inView, scroll } from "motion";

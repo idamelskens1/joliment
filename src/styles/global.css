@@ -7,6 +7,18 @@
 
 
 
+@theme {
+    --color-darkblue: #020551;
+  --color-blue: #2c30a6;
+  --color-lightblue: #8a8ef7;
+  --color-darkyellow: #fdbe0f;
+  --color-yellow: #ffd153;
+  --color-pink: #ffe7e4;
+  --color-beige: #fff8ee;
+  --color-orange: #cd6200;
+  --color-brightorange: #f2790a;
+  --color-hoverorange: #d6904f;
+}
 
 
 
