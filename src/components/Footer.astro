@@ -1,9 +1,9 @@
 ---
 import { Image } from "astro:assets";
 import footer from "../assets/footer-logo.png";
-import facebook from "../assets/Face-ikon.png";
-import instagram from "../assets/Insta-ikon.png";
-import tiktok from "../assets/Tiktok-ikon.png";
+import facebook from "../assets/Faceikon.svg";
+import instagram from "../assets/instaikon.svg";
+import tiktok from "../assets/tiktokikon.svg";
 import mail from "../assets/mail-ikon.png";
 import mobil from "../assets/Mobil-ikon.png";
 import slojfe from "../assets/slojfe-rod.png";
@@ -17,7 +17,7 @@ import Button from "./Button.astro";
         <Image src={footer} alt="" class="" />
       </div>
       <div class="flex flex-col items-center">
-        <div class="grid grid-cols-3 sm:grid-cols-3 mt-10 lg:mt-30 gap-5">
+        <div class="grid grid-cols-3 sm:grid-cols-3 mt-10 lg:mt-30 justify-items-center gap-10 lg:ml-40">
           <a href="skriv facebook linke her"><Image src={facebook} alt="" class="w-8" /></a>
           <a href="skriv insta link her"><Image src={instagram} alt="" class="" /></a>
           <a href="kriv tiktok link her"><Image src={tiktok} alt="" class="" /></a>
@@ -41,7 +41,7 @@ import Button from "./Button.astro";
         <p class="text-red-950">Mandag - Fredag kl. 9 - 17</p>
       </div>
 
-      <div class="place-self-center mt-10">
+      <div class="place-self-center mt-10 lg:mt-0">
         <p class="text-red-950">Adresse</p>
         <p class="text-red-950">JOLIMENT</p>
         <p class="text-red-950">Gammel jernbanevej 4,</p>

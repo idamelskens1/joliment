@@ -1,11 +1,15 @@
 ---
 import { Image } from "astro:assets";
-import inforgrafikSam from "../assets/inforgrafikSam.png";
+
 import MainLayout from "../layouts/MainLayout.astro";
 import Button from "../components/Button.astro";
+import Pil from "../components/Pil.astro";
 import index1 from "../assets/index1.png";
-import sloejfe from "../assets/sloeje2.png";
-import lobet from "../assets/lobet.png";
+import redslojfe from "../assets/redslojfe.svg";
+import lobet from "../assets/slojfelobet.svg";
+import sogh from "../assets/s&h.svg";
+import genbrug from "../assets/genbrug.svg";
+import dogp from "../assets/D&P.svg";
 ---
 
 <MainLayout>
@@ -31,51 +35,65 @@ import lobet from "../assets/lobet.png";
   <!--første section slut -->
 
   <!--Infografik start -->
-  <div class="my-20">
-    <figure>
-      <Image src={inforgrafikSam} alt="" class="place-self-center w-220" />
-    </figure>
+  <div class="flex flex-col items-center justify-between mt-10">
+    <div class="grid grid-cols-1 lg:grid-cols-3 my-5 lg:my-20 gap-20 lg:gap-50">
+      <div class="">
+        <p class="text-2xl place-self-center">Ingen børn er ens ligesom sløjfen</p>
+        <Image src={sogh} alt="" class="w-50 place-self-center mt-16" />
+      </div>
+      <div>
+        <p class="text-2xl place-self-center">Der bliver kun brugt genbrugsmaterialer</p>
+        <Image src={genbrug} alt="" class="w-35 place-self-center mt-16" />
+      </div>
+      <div>
+        <p class="text-2xl place-self-center">Din donation hjælper et barn</p>
+        <Image src={dogp} alt="" class="w-50 place-self-center mt-16" />
+      </div>
+    </div>
   </div>
 
   <!--Infografik start -->
 
   <!--juleønsker fra børn start -->
 
-  <section class="bg-amber-100">
+  <section class="bg-amber-100 border-70 border-amber-100">
     <section class="">
       <div class="">
-        <h2 class="text-blue-950 place-self-center">Juleønsker fra danske sygdomsramte børn og -unge</h2>
+        <h3 class="text-blue-950 place-self-center text-6xl">Drømme ønsker</h3>
       </div>
     </section>
 
     <section class="grid grid-cols-1 lg:grid-cols-2">
-      <section class="m-25">
-        <div class="bg-blue-950 border-25 border-blue-950">
-          <p>
+      <section class="m-20">
+        <div class="bg-blue-950 border-45 border-blue-950">
+          <p class="lg:text-xl font-light">
             Noah har altid elsket musik, og på hospitalet bruger han tiden på at lytte til sine yndlingssange. Hans drøm er at få sin egen guitar, så han selv kan skabe musik og give små “koncerter”
             for sin familie.
           </p>
         </div>
-        <h3 class="text-blue-950">Noah, 11 år</h3>
+        <h3 class="text-blue-950 text-2xl mt-3">Noah, 11 år</h3>
       </section>
-      <section class="m-27 mt-50">
-        <div class="bg-blue-950 border-25 border-blue-950">
-          <p>
+      <section class="m-23 mt-50">
+        <div class="bg-blue-950 border-45 border-blue-950">
+          <p class="lg:text-xl font-light">
             Lukas drømmer om at opleve verden udenfor hospitalets vægge, og hans største juleønske er en tur til Paris. Han vil se Eiffeltårnet, smage croissanter og gå gennem de små gader, som han
             har set på billeder og i film. For Lukas ville det ikke bare være en rejse – det ville være en oplevelse
           </p>
         </div>
-        <h3 class="text-blue-950">Lukas, 15 år</h3>
+        <h3 class="text-blue-950 mt-3 text-2xl">Lukas, 15 år</h3>
       </section>
-      <section class="m-25 -mt-8">
-        <div class="bg-blue-950 border-25 border-blue-950">
-          <p>
+      <section class="m-20 -mt-15">
+        <div class="bg-blue-950 border-45 border-blue-950">
+          <p class="lg:text-xl font-light">
             Ella elsker at følge Yasmin og Mika på YouTube – deres videoer får hende altid til at grine, selv på svære dage på hospitalet. Hendes største juleønske er at møde dem i virkeligheden, få
             et stort kram og måske tage et billede sammen. For Ella ville det være den mest magiske oplevelse og en julegave, hun aldrig ville glemme.
           </p>
         </div>
-        <h3 class="text-blue-950">Ella, 7 år</h3>
+        <h3 class="text-blue-950 mt-3 text-2xl">Ella, 7 år</h3>
       </section>
+      <div>
+        <Image src={redslojfe} alt="" class="w-120 place-self-center lg:mt-15" />
+      </div>
     </section>
   </section>
 
@@ -117,6 +135,8 @@ import lobet from "../assets/lobet.png";
       <Image src={lobet} alt="" class="w-100" />
     </div>
   </section>
+
+  <Pil />
 
   <!--Sløjfeløbet flyer slut -->
 </MainLayout>
