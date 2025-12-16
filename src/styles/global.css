@@ -1,10 +1,17 @@
 
 
+@plugin "daisyui";
+
 
 /* Import Google Fonts */
-@import url("https://fonts.googleapis.com/css2?family=La+Belle+Aurore&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=TASA+Orbiter:wght@400..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=La+Belle+Aurore&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap");
 @import "tailwindcss";
 
+
+:root {
+  --font-hand: "La Belle Aurore", cursive;
+}
 
 
 @theme {
@@ -18,6 +25,9 @@
   --color-orange: #cd6200;
   --color-brightorange: #f2790a;
   --color-hoverorange: #d6904f;
+
+    /*custom cursor*/
+  --handcursor: url(/cursorbow.png) 1 1, pointer;
 }
 
 
@@ -36,15 +46,16 @@
 
     }
     h2 {
-      font-family: "Inter", sans-serif;
+      font-family: var(--font-hand);
       font-size: xx-large;
       color: bisque;
       cursor: default;
     }
 
     h3 {
-        font-family: "La Belle Arore", cursive;
+        font-family: var(--font-hand);
         color: bisque;
+        cursor: default;
     }
     h4,
     h5,
@@ -56,9 +67,9 @@
       cursor: default;
     }
   }
+  	a, button{
+		@apply cursor-(--handcursor);
+	}
 }
 
-@theme {
-  /*custom cursor*/
-  --handcursor: url(/bowcursor.svg) 25 25, pointer;
-}
+

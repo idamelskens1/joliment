@@ -39,15 +39,15 @@ import dogp from "../assets/D&P.svg";
     <div class="grid grid-cols-1 lg:grid-cols-3 justify-items-center">
       <div>
         <p class="place-self-center text-2xl">Ingen børn er ens ligesom sløjfen</p>
-        <Image src={sogh} alt="" class="w-55 mt-10 mb-30 lg:mt-15 place-self-center" />
+        <Image src={sogh} alt="" class="lg:w-55 w-45 mt-10 mb-30 lg:mt-15 place-self-center" />
       </div>
       <div>
         <p class="place-self-center text-2xl">Der bliver kun brugt genbrugsmaterialer</p>
-        <Image src={genbrug} alt="" class="w-40 mt-10 mb-30 lg:mt-15 place-self-center" />
+        <Image src={genbrug} alt="" class="lg:w-40 w-30 mt-10 mb-30 lg:mt-15 place-self-center" />
       </div>
       <div>
         <p class="place-self-center text-2xl">Din donation hjælper et barn</p>
-        <Image src={dogp} alt="" class="w-50 mt-10 mb-20 lg:mt-17 place-self-center" />
+        <Image src={dogp} alt="" class="lg:w-50 w-40 mt-10 mb-20 lg:mt-17 place-self-center" />
       </div>
     </div>
   </section>
@@ -59,17 +59,19 @@ import dogp from "../assets/D&P.svg";
   <section class="bg-amber-100 border-70 border-amber-100">
     <section class="">
       <div class="">
-        <h3 class="text-blue-950 place-self-center text-5xl">Drømme ønsker</h3>
+        <h3 class="text-blue-950 place-self-center text-5xl lg:text-7xl">Drømme ønsker</h3>
       </div>
     </section>
 
     <section class="grid grid-cols-1 lg:grid-cols-2">
-      <section class="lg:m-17">
-        <div class="bg-blue-950 border-45 border-blue-950 mt-20 lg:mt-10">
-          <p class="lg:text-xl font-light">
-            Noah har altid elsket musik, og på hospitalet bruger han tiden på at lytte til sine yndlingssange. Hans drøm er at få sin egen guitar, så han selv kan skabe musik og give små “koncerter”
-            for sin familie.
-          </p>
+      <section class="lg:m-17 animate__animated animate__fadeInLeft">
+        <div class="fadein1">
+          <div class="bg-blue-950 border-45 border-blue-950 mt-20 lg:mt-10">
+            <p class="lg:text-xl font-light">
+              Noah har altid elsket musik, og på hospitalet bruger han tiden på at lytte til sine yndlingssange. Hans drøm er at få sin egen guitar, så han selv kan skabe musik og give små “koncerter”
+              for sin familie.
+            </p>
+          </div>
         </div>
         <h3 class="text-red-950 text-2xl mt-3">Noah, 11 år</h3>
       </section>
@@ -83,7 +85,7 @@ import dogp from "../assets/D&P.svg";
         <h3 class="text-red-950 mt-3 text-2xl mb-20 lg:mb-0">Lukas, 15 år</h3>
       </section>
       <section class="lg:m-17 lg:-mt-40">
-        <div class="bg-blue-950 border-45 border-blue-950 mt-20 lg:mt-10">
+        <div class="bg-blue-950 border-45 border-blue-950 mt-5 lg:mt-10">
           <p class="lg:text-xl font-light">
             Ella elsker at følge Yasmin og Mika på YouTube – deres videoer får hende altid til at grine, selv på svære dage på hospitalet. Hendes største juleønske er at møde dem i virkeligheden, få
             et stort kram og måske tage et billede sammen. For Ella ville det være den mest magiske oplevelse og en julegave, hun aldrig ville glemme.
@@ -99,37 +101,36 @@ import dogp from "../assets/D&P.svg";
 
   <!--juleønsker fra børn start -->
 
-  <!--timer start -->
-  <section class="flex flex-col items-center mt-30 text-amber-100">
-    <div class="grid auto-cols-max grid-flow-col gap-5 text-center">
-      <div class="bg-neutral rounded-box text-neutral-content flex flex-col p-2">
-        <span class="countdown font-mono text-5xl">
-          <span style="--value:15;" aria-live="polite" aria-label="15">15</span>
-        </span>
-        days
-      </div>
-      <div class="bg-neutral rounded-box text-neutral-content flex flex-col p-2">
-        <span class="countdown font-mono text-5xl">
-          <span style="--value:10;" aria-live="polite" aria-label="10">10</span>
-        </span>
-        hours
-      </div>
-      <div class="bg-neutral rounded-box text-neutral-content flex flex-col p-2">
-        <span class="countdown font-mono text-5xl">
-          <span style="--value:24;" aria-live="polite" aria-label="24">24</span>
-        </span>
-        min
-      </div>
-      <div class="bg-neutral rounded-box text-neutral-content flex flex-col p-2">
-        <span class="countdown font-mono text-5xl">
-          <span style="--value:59;" aria-live="polite" aria-label="59">59</span>
-        </span>
-        sec
-      </div>
+  <!-- countdown -->
+  <div class="grid auto-cols-max grid-flow-col gap-3 lg:gap-10 text-center place-self-center text-red-950 mt-30">
+    <div class="bg-amber-100 border-5 lg:border-20 border-amber-100 flex flex-col">
+      <span class="countdown font-mono text-5xl lg:text-7xl">
+        <span style="--value:15;" aria-live="polite" aria-label="15">15</span>
+      </span>
+      days
     </div>
-  </section>
+    <div class="bg-amber-100 border-5 lg:border-20 border-amber-100 flex flex-col">
+      <span class="countdown font-mono text-5xl lg:text-7xl">
+        <span style="--value:10;" aria-live="polite" aria-label="10">10</span>
+      </span>
+      hours
+    </div>
+    <div class="bg-amber-100 border-5 lg:border-20 border-amber-100 flex flex-col">
+      <span class="countdown font-mono text-5xl lg:text-7xl">
+        <span style="--value:24;" aria-live="polite" aria-label="24">24</span>
+      </span>
+      min
+    </div>
+    <div class="bg-amber-100 border-5 lg:border-20 border-amber-100 flex flex-col">
+      <span class="countdown font-mono text-5xl lg:text-7xl">
+        <span id="seconds" style="--value:59;" aria-live="polite" aria-label="59">59</span>
+      </span>
+      sec
+    </div>
+  </div>
+  <!-- countdown —>
 
-  <!--Sløjfeløbet flyer start -->
+  <!- Sløjfeløbet flyer start -->
   <section class="m-10 p-6 place-self-center">
     <div>
       <Image src={lobet} alt="" class="w-100" />
@@ -140,3 +141,33 @@ import dogp from "../assets/D&P.svg";
 
   <!--Sløjfeløbet flyer slut -->
 </MainLayout>
+
+<script>
+  import { inView } from "motion";
+
+  const FadeIn1 = document.querySelector(".fadein1");
+
+  inView(FadeIn1, () => {
+    FadeIn1.classList.add("animate__animated", "animate__fadeInLeft");
+  });
+
+  const FadeIn2 = document.querySelector(".fadein2");
+
+  inView(FadeIn2, () => {
+    FadeIn2.classList.add("animate__animated", "animate__fadeInUp");
+  });
+
+  const secondsSpan = document.getElementById("seconds");
+
+  let seconds = 59;
+
+  setInterval(() => {
+    seconds = seconds > 0 ? seconds - 1 : 59;
+
+    secondsSpan.style.setProperty("--value", seconds);
+
+    secondsSpan.setAttribute("aria-label", seconds.toString());
+
+    secondsSpan.textContent = seconds.toString();
+  }, 1000);
+</script>

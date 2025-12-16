@@ -8,74 +8,75 @@ import kategori3 from "../assets/kategori3.svg";
 import kategori4 from "../assets/kategori4.svg";
 import mobil from "../assets/Mobil-ikon.png";
 import mail from "../assets/mail-ikon.png";
-import facebook from "../assets/Face-ikon.png";
-import instagram from "../assets/Insta-ikon.png";
-import tiktok from "../assets/Tiktok-ikon.png";
+import facebook from "../assets/Faceikon.svg";
+import instagram from "../assets/instaikon.svg";
+import tiktok from "../assets/tiktokikon.svg";
+import JolimentLayout from "../layouts/JolimentLayout.astro";
 ---
 
-<html class="bg-amber-50">
-  <section class="">
-    <div class="bg-transparent z-50 absolute">
-      <h1 class="text-red-950 m-10 text-5xl">JOLIMENT</h1>
-    </div>
-    <Image src={hero} alt="" class="w-full" />
-  </section>
+<JolimentLayout>
+  <html class="bg-amber-50">
+    <section class="">
+      <div class="bg-transparent z-50 absolute">
+        <h1 class="text-red-950 m-5 lg:m-10 text-3xl lg:text-5xl">JOLIMENT</h1>
+      </div>
+      <Image src={hero} alt="" class="w-full" />
+    </section>
 
-  <section>
-    <div class="my-20">
-      <h2 class="text-red-950 place-self-center">KATEGORI</h2>
-    </div>
-    <div class="grid lg:grid-cols-2 grid-cols-1 gap-15 m-10 place-self-center justify-center">
-      <div>
-        <a href="/kampagneforside"><Image src={kategori1} alt="kampagne hjemmesiden" class="w-140" /></a>
+    <section>
+      <div class="my-20">
+        <h2 class="text-red-950 place-self-center">KATEGORI</h2>
       </div>
-      <div>
-        <Image src={kategori2} alt="" class="w-140" />
-      </div>
-      <div>
-        <Image src={kategori3} alt="" class="w-140" />
-      </div>
-      <div>
-        <Image src={kategori4} alt="" class="w-140" />
-      </div>
-    </div>
-  </section>
-
-  <footer>
-    <div class="grid grid-cols-1 lg:grid-cols-3 mt-10 p-10">
-      <div class="place-self-center">
+      <div class="grid lg:grid-cols-2 grid-cols-1 gap-15 m-10 place-self-center justify-center">
         <div>
-          <h1 class="text-red-950 mb-5">JOLIMENT</h1>
+          <a href="/kampagneforside"><Image src={kategori1} alt="kampagne hjemmesiden" class="w-140" /></a>
         </div>
-        <p class="mb-3 text-red-950">Kontakt</p>
-        <div class="flex items-center mb-3 gap-3">
-          <Image src={mail} alt="" class="" />
-          <a class="text-red-950" href="">Info@joliment.dk</a>
+        <div>
+          <Image src={kategori2} alt="" class="w-140" />
         </div>
-        <div class="flex items-center mb-3 gap-3">
-          <Image src={mobil} alt="" class="" />
-          <a class="text-red-950" href="">+45 40 22 19 23</a>
+        <div>
+          <Image src={kategori3} alt="" class="w-140" />
         </div>
-        <p class="text-red-950">Mandag - Fredag kl. 9 - 17</p>
-      </div>
-
-      <div class="place-self-center">
-        <p class="text-red-950">Adresse</p>
-        <p class="text-red-950">JOLIMENT</p>
-        <p class="text-red-950">Gammel jernbanevej 4,</p>
-        <p class="text-red-950">2500, Valby</p>
-        <p class="text-red-950">Danmark</p>
-      </div>
-
-      <div class="flex flex-col items-center">
-        <div class="grid grid-cols-3 sm:grid-cols-3 mt-10 lg:mt-18 gap-5">
-          <a href="skriv facebook linke her"><Image src={facebook} alt="" class="w-8" /></a>
-          <a href="skriv insta link her"><Image src={instagram} alt="" class="" /></a>
-          <a href="kriv tiktok link her"><Image src={tiktok} alt="" class="" /></a>
+        <div>
+          <Image src={kategori4} alt="" class="w-140" />
         </div>
       </div>
-    </div>
-  </footer>
+    </section>
 
+    <footer>
+      <div class="grid grid-cols-1 lg:grid-cols-3 mt-10 p-10">
+        <div class="place-self-center">
+          <div>
+            <h1 class="text-red-950 mb-5">JOLIMENT</h1>
+          </div>
+          <p class="mb-3 text-red-950">Kontakt</p>
+          <div class="flex items-center mb-3 gap-3">
+            <Image src={mail} alt="" class="" />
+            <a class="text-red-950" href="">Info@joliment.dk</a>
+          </div>
+          <div class="flex items-center mb-3 gap-3">
+            <Image src={mobil} alt="" class="" />
+            <a class="text-red-950" href="">+45 40 22 19 23</a>
+          </div>
+          <p class="text-red-950">Mandag - Fredag kl. 9 - 17</p>
+        </div>
 
-</html>
+        <div class="place-self-center lg:mt-13">
+          <p class="text-red-950">Adresse</p>
+          <p class="text-red-950">JOLIMENT</p>
+          <p class="text-red-950">Gammel jernbanevej 4,</p>
+          <p class="text-red-950">2500, Valby</p>
+          <p class="text-red-950">Danmark</p>
+        </div>
+
+        <div class="flex flex-col items-center">
+          <div class="grid grid-cols-3 sm:grid-cols-3 mt-10 lg:mt-18 gap-5">
+            <a href="skriv facebook linke her"><Image src={facebook} alt="" class="w-8" /></a>
+            <a href="skriv insta link her"><Image src={instagram} alt="" class="" /></a>
+            <a href="kriv tiktok link her"><Image src={tiktok} alt="" class="" /></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </html>
+</JolimentLayout>

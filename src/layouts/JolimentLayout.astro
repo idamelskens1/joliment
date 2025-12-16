@@ -1,9 +1,6 @@
 ---
 import "../styles/global.css";
 const { title } = Astro.props;
-import "animate.css";
-import Header from "../components/Header.astro";
-import Footer from "../components/Footer.astro";
 ---
 
 <html lang="da">
@@ -15,13 +12,9 @@ import Footer from "../components/Footer.astro";
     <title>{Astro.props.title}</title>
     <link rel="icon" type="../assets/images/guitar-favicon.png" href="/logo.svg" />
   </head>
-  <body class="min-h-screen bg-red-950">
-    <header>
-      <Header />
-    </header>
+  <body class="min-h-screen bg-amber-50">
+    <header></header>
     <slot />
   </body>
-  <footer>
-    <Footer />
-  </footer>
+  <footer></footer>
 </html>
