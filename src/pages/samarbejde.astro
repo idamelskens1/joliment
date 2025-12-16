@@ -143,20 +143,6 @@ import dogp from "../assets/D&P.svg";
 </MainLayout>
 
 <script>
-  import { inView } from "motion";
-
-  const FadeIn1 = document.querySelector(".fadein1");
-
-  inView(FadeIn1, () => {
-    FadeIn1.classList.add("animate__animated", "animate__fadeInLeft");
-  });
-
-  const FadeIn2 = document.querySelector(".fadein2");
-
-  inView(FadeIn2, () => {
-    FadeIn2.classList.add("animate__animated", "animate__fadeInUp");
-  });
-
   const secondsSpan = document.getElementById("seconds");
 
   let seconds = 59;
@@ -170,4 +156,18 @@ import dogp from "../assets/D&P.svg";
 
     secondsSpan.textContent = seconds.toString();
   }, 1000);
+
+  import { inView } from "motion";
+
+  const FadeIn1 = document.querySelector(".fadein1");
+
+  inView(FadeIn1, () => {
+    FadeIn1.classList.add("animate__animated", "animate__fadeInLeft");
+  });
+
+  const FadeIn2 = document.querySelector(".fadein2");
+
+  inView(FadeIn2, () => {
+    FadeIn2.classList.add("animate__animated", "animate__fadeInUp");
+  });
 </script>
