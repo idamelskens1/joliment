@@ -59,3 +59,18 @@
     @apply cursor-(--handcursor);
   }
 }
+.campaign-video {
+  position: re;
+  width: 100%;
+  max-width: 480px; /* 👈 gør den mindre */
+  aspect-ratio: 16 / 9;
+  border-radius: 16px;
+  overflow: hidden;
+  margin: 2rem 0; /* luft omkring */
+}
+
+.campaign-video iframe {
+  width: 50%;
+  height: 50%;
+  border: 0;
+}
