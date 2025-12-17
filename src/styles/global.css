@@ -1,36 +1,24 @@
-
-
 @plugin "daisyui";
-
 
 /* Import Google Fonts */
 @import url("https://fonts.googleapis.com/css2?family=La+Belle+Aurore&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap");
 @import "tailwindcss";
 
-
 :root {
   --font-hand: "La Belle Aurore", cursive;
 }
 
-
 @theme {
-    --color-darkblue: #020551;
-  --color-blue: #2c30a6;
-  --color-lightblue: #8a8ef7;
-  --color-darkyellow: #fdbe0f;
-  --color-yellow: #ffd153;
-  --color-pink: #ffe7e4;
-  --color-beige: #fff8ee;
-  --color-orange: #cd6200;
-  --color-brightorange: #f2790a;
-  --color-hoverorange: #d6904f;
+  --color-MAWblue: #09214c;
+  --color-lightblue: #d3ebff;
+  --color-darkred: #701010;
+  --color-beige: #f7f1e2;
+  --color-hover: #d6904f;
 
-    /*custom cursor*/
+  /*custom cursor*/
   --handcursor: url(/cursorbow.png) 1 1, pointer;
 }
-
-
 
 @layer base {
   *,
@@ -43,19 +31,18 @@
       color: bisque;
       cursor: default;
       font-size: xx-large;
-
     }
     h2 {
       font-family: var(--font-hand);
+      @apply text-beige;
       font-size: xx-large;
-      color: bisque;
       cursor: default;
     }
 
     h3 {
-        font-family: var(--font-hand);
-        color: bisque;
-        cursor: default;
+      font-family: var(--font-hand);
+      @apply text-beige;
+      cursor: default;
     }
     h4,
     h5,
@@ -63,13 +50,12 @@
     p,
     li {
       font-family: "Inter", sans-serif;
-      color: bisque;
+      @apply text-beige;
       cursor: default;
     }
   }
-  	a, button{
-		@apply cursor-(--handcursor);
-	}
+  a,
+  button {
+    @apply cursor-(--handcursor);
+  }
 }
-
-
