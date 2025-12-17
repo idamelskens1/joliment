@@ -60,7 +60,7 @@
   }
 }
 .campaign-video {
-  position: re;
+  position: relative;
   width: 100%;
   max-width: 480px; /* 👈 gør den mindre */
   aspect-ratio: 16 / 9;
