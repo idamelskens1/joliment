@@ -4,35 +4,29 @@ import logo from "../assets/logo.png";
 import Button from "../components/Button.astro";
 ---
 
-<div class="navbar shadow-sm bg-red-950">
-  <div class="navbar-start">
-    <Image src={logo} alt="" class="w-15 lg:w-20" />
+<div class="navbar shadow-sm bg-darkred">
+  <div class="navbar-start ml-10 my-5">
+    <a href="/kampagneforside"><Image src={logo} alt="" class="w-12 lg:w-20" /></a>
   </div>
 
   <div class="navbar-end">
     <div class="navbar-center hidden lg:flex">
       <ul class="menu menu-horizontal px-1 gap-10">
-        <a href="">Om samarbejdet</a>
-        <a href="">Om sløjfen</a>
+        <a href="/samarbejde" class="text-beige underline text-inter text-xl mt-8">Om samarbejdet</a>
+        <a href="/sloejfe" class="text-beige underline text-inter text-xl mt-8">Om sløjfen</a>
         <a href="/kobsside"><Button variant="tertiary">Køb sløjfe</Button></a>
       </ul>
     </div>
-    <div class="dropdown">
+    <div class="dropdown dropdown-end">
       <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-beige" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16"></path>
         </svg>
       </div>
-      <ul tabindex="-1" class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
-        <li><a>Item 1</a></li>
-        <li>
-          <a>Parent</a>
-          <ul class="p-2">
-            <li><a>Submenu 1</a></li>
-            <li><a>Submenu 2</a></li>
-          </ul>
-        </li>
-        <li><a>Item 3</a></li>
+      <ul tabindex="-1" class="menu menu-lg dropdown-content bg-lightblue mt-3 w-40 p-2">
+        <li class="text-darkred"><a href="/samarbejde">Om Samarbejdet</a></li>
+        <li class="text-darkred"><a href="/sloejfe">Om sløjfen</a></li>
+        <a href="/kobsside"><li><Button variant="tertiary" size="xsmall">Køb sløjfe</Button></li></a>
       </ul>
     </div>
   </div>

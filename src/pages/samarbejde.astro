@@ -15,10 +15,10 @@ import dogp from "../assets/D&P.svg";
 <MainLayout>
   <!--første section start -->
 
-  <section class="grid grid-cols-1 lg:grid-cols-2 m-20 gap-20 mt-40 lg:mt-60 place-self-center">
+  <section class="grid grid-cols-1 lg:grid-cols-2 m-20 gap-20 mt-15 lg:mt-20 place-self-center">
     <div class="lg:m-15">
       <h2 class="">Børn fortjener en magisk jul</h2>
-      <p class="text-beige-100 mt-10 text-xl/8">
+      <p class="text-beige mt-10 text-xl/8">
         Joliment og Make-A-Wish har indgået et særligt samarbejde, der giver sløjferne en endnu større betydning. 25% af salget går til at opfylde ønsker for hospitalsramte børn og skabe lys i en svær
         tid. Sløjferne bliver dermed et lille symbol på håb, omsorg og fællesskab. Sammen gør de en mærkbar forskel – ét ønske ad gangen.
       </p>
@@ -36,13 +36,13 @@ import dogp from "../assets/D&P.svg";
 
   <!--Infografik start -->
   <section class="lg:my-40 my-30 m-10">
-    <div class="grid grid-cols-1 lg:grid-cols-3 justify-items-center">
+    <div class="grid grid-cols-1 lg:grid-cols-3">
       <div>
         <p class="place-self-center text-2xl">Ingen børn er ens ligesom sløjfen</p>
         <Image src={sogh} alt="" class="lg:w-55 w-45 mt-10 mb-30 lg:mt-15 place-self-center" />
       </div>
       <div>
-        <p class="place-self-center text-2xl">Der bliver kun brugt genbrugsmaterialer</p>
+        <p class="place-self-center text-2xl">Der bliver kun genbrugsmaterialer</p>
         <Image src={genbrug} alt="" class="lg:w-40 w-30 mt-10 mb-30 lg:mt-15 place-self-center" />
       </div>
       <div>
@@ -56,10 +56,10 @@ import dogp from "../assets/D&P.svg";
 
   <!--juleønsker fra børn start -->
 
-  <section class="bg-beige-100 border-70 border-beige-100">
+  <section class="bg-beige border-70 border-beige">
     <section class="">
       <div class="">
-        <h3 class="text-MAWblue-950 place-self-center text-5xl lg:text-7xl">Drømme ønsker</h3>
+        <h3 class="text-MAWblue place-self-center text-5xl lg:text-7xl">Drømme ønsker</h3>
       </div>
     </section>
 
@@ -73,28 +73,28 @@ import dogp from "../assets/D&P.svg";
             </p>
           </div>
         </div>
-        <h3 class="text-darkred-950 text-2xl mt-3">Noah, 11 år</h3>
+        <h3 class="text-darkred text-2xl mt-3">Noah, 11 år</h3>
       </section>
       <section class="lg:m-17 lg:mt-50 animate__animated animate__fadeInRight">
         <div class="fadein3">
-        <div class="bg-MAWblue border-45 border-MAWblue mt-20 lg:mt-0">
-          <p class="lg:text-xl font-light">
-            Lukas drømmer om at opleve verden udenfor hospitalets vægge, og hans største juleønske er en tur til Paris. Han vil se Eiffeltårnet, smage croissanter og gå gennem de små gader, som han
-            har set på billeder og i film. For Lukas ville det ikke bare være en rejse – det ville være en oplevelse
-          </p>
-        </div>
-        <h3 class="text-darkred-950 mt-3 text-2xl mb-20 lg:mb-0">Lukas, 15 år</h3>
+          <div class="bg-MAWblue border-45 border-MAWblue mt-20 lg:mt-0">
+            <p class="lg:text-xl font-light">
+              Lukas drømmer om at opleve verden udenfor hospitalets vægge, og hans største juleønske er en tur til Paris. Han vil se Eiffeltårnet, smage croissanter og gå gennem de små gader, som han
+              har set på billeder og i film. For Lukas ville det ikke bare være en rejse – det ville være en oplevelse
+            </p>
+          </div>
+          <h3 class="text-darkred mt-3 text-2xl mb-20 lg:mb-0">Lukas, 15 år</h3>
         </div>
       </section>
       <section class="lg:m-17 lg:-mt-40 animate__animated animate__fadeInLeft">
         <div class="fadein2">
-        <div class="bg-MAWblue border-45 border-MAWblue mt-5 lg:mt-10">
-          <p class="lg:text-xl font-light">
-            Ella elsker at følge Yasmin og Mika på YouTube – deres videoer får hende altid til at grine, selv på svære dage på hospitalet. Hendes største juleønske er at møde dem i virkeligheden, få
-            et stort kram og måske tage et billede sammen. For Ella ville det være den mest magiske oplevelse og en julegave, hun aldrig ville glemme.
-          </p>
-        </div>
-        <h3 class="text-darkred-950 mt-3 text-2xl mb-20 lg:mb-0">Ella, 7 år</h3>
+          <div class="bg-MAWblue border-45 border-MAWblue mt-5 lg:mt-10">
+            <p class="lg:text-xl font-light">
+              Ella elsker at følge Yasmin og Mika på YouTube – deres videoer får hende altid til at grine, selv på svære dage på hospitalet. Hendes største juleønske er at møde dem i virkeligheden, få
+              et stort kram og måske tage et billede sammen. For Ella ville det være den mest magiske oplevelse og en julegave, hun aldrig ville glemme.
+            </p>
+          </div>
+          <h3 class="text-darkred mt-3 text-2xl mb-20 lg:mb-0">Ella, 7 år</h3>
         </div>
       </section>
       <div>
@@ -105,33 +105,30 @@ import dogp from "../assets/D&P.svg";
 
   <!--juleønsker fra børn slut -->
 
-
-<!--Kampagne video start  -->
-<!--Kampagne video slut  -->
-
-
+  <!--Kampagne video start  -->
+  <!--Kampagne video slut  -->
 
   <!-- countdown -->
-  <div class="grid auto-cols-max grid-flow-col gap-3 lg:gap-10 text-center place-self-center text-red-950 mt-30">
-    <div class="bg-beige-100 border-5 lg:border-20 border-beige-100 flex flex-col">
+  <div class="grid auto-cols-max grid-flow-col gap-3 lg:gap-10 text-center place-self-center text-darkred mt-30">
+    <div class="bg-beige border-5 lg:border-20 border-beige flex flex-col">
       <span class="countdown font-mono text-5xl lg:text-7xl">
         <span style="--value:15;" aria-live="polite" aria-label="15">15</span>
       </span>
       days
     </div>
-    <div class="bg-beige-100 border-5 lg:border-20 border-beige-100 flex flex-col">
+    <div class="bg-beige border-5 lg:border-20 border-beige flex flex-col">
       <span class="countdown font-mono text-5xl lg:text-7xl">
         <span style="--value:10;" aria-live="polite" aria-label="10">10</span>
       </span>
       hours
     </div>
-    <div class="bg-beige-100 border-5 lg:border-20 border-beige-100 flex flex-col">
+    <div class="bg-beige border-5 lg:border-20 border-beige flex flex-col">
       <span class="countdown font-mono text-5xl lg:text-7xl">
         <span style="--value:24;" aria-live="polite" aria-label="24">24</span>
       </span>
       min
     </div>
-    <div class="bg-beige-100 border-5 lg:border-20 border-beige-100 flex flex-col">
+    <div class="bg-beige border-5 lg:border-20 border-beige flex flex-col">
       <span class="countdown font-mono text-5xl lg:text-7xl">
         <span id="seconds" style="--value:59;" aria-live="polite" aria-label="59">59</span>
       </span>
@@ -182,7 +179,7 @@ import dogp from "../assets/D&P.svg";
   });
 
   const FadeIn3 = document.querySelector(".fadein3");
-inView(FadeIn3, () => {
-  FadeIn3.classList.add("animate__animated", "animate__fadeInRight");
-});
+  inView(FadeIn3, () => {
+    FadeIn3.classList.add("animate__animated", "animate__fadeInRight");
+  });
 </script>

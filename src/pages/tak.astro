@@ -6,15 +6,17 @@ import MainLayout from "../layouts/MainLayout.astro";
 ---
 
 <MainLayout>
-  <section class="grid grid-cols-1 place-self-center mt-60 gap-9">
-    <h1 class="place-self-center">Tak for dit køb og donation!</h1>
-    <div class="">
-      <p class="place-self-center">Joliment og Make A Wish værdsætter dit køb af sløjfe! Du har nu</p>
-      <p class="place-self-center">været med til at hjælpe et barn i denne juletid!</p>
+  <section class="grid grid-cols-1 place-self-center mt-33 gap-9">
+    <h1 class="place-self-center text-3xl lg:text-5xl text-beige">Tak for dit køb og donation!</h1>
+    <div>
+      <p class="place-self-center text-xl lg:text-2xl">Joliment og Make A Wish værdsætter dit køb af sløjfe! Du har nu</p>
+      <p class="place-self-center text-xl lg:text-2xl">været med til at hjælpe et barn i denne juletid!</p>
     </div>
     <div class="place-self-center">
       <a href="/tak"><Button variant="secondary">Tilbage til startside</Button></a>
     </div>
-    <Image src={slojfe} alt="" class="w-full my-10" />
+    <div class="place-self-center">
+      <Image src={slojfe} alt="" class="w-150 my-10" />
+    </div>
   </section>
 </MainLayout>
